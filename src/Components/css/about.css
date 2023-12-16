@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+.about{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    /* height:100vh; */
+    background: #efefef;
+    padding:1vw 0;
+}
+
+.about .about_wrap h3{
+
+    padding-top:50px;
+    text-align: center;
+    font-size:1.5em;
+}
+
+.about .about_wrap .about-contents{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:5vw 0;
+}
+.about .about_wrap .profile-img{
+    width:350px;
+    height:350px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin:0 3vw;
+
+}
+
+.about .about_wrap .profile-img img{
+    width:100%;
+    object-fit: cover;
+
+}
+
+.about .about_wrap .about-contents .profile-txt{
+    font-size:1.5em;
+ 
+    font-weight: 500;
+    margin: 0 3vw;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+
+  margin:0 .5vw;
+
+}
+
+.about .about_wrap .about-contents .profile-txt ul li{
+    padding: 1vw 2vw 1vw .5vw;
+    margin:20px 0;
+    display:flex;
+    align-items:center;
+
+    background: #fff;
+    color:#2d2d2d;
+
+    border-radius: 50px;
+
+    &:hover {
+        transition: .7s all ease;
+        animation: 0.4s bounce infinite;
+      }
+}
+
+.about .about_wrap .about-contents .profile-txt ul li span{
+    padding: 0 1vw;
+    color:#3b75f3;
+}
+
+.about .about_wrap .about-contents .profile-txt ul li .reply{
+    font-weight: 300;
+    padding: 0 2vw;
+}
+
+.about .about_wrap .intro{
+    text-align: center;
+    font-size:1.2em;
+    padding-bottom:4vw;
+}
+
+.about .about_wrap .intro p {
+    padding:20px 0;
+}
+
+.about .about_wrap .intro .bold{
+    /* color:#3b75f3; */
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 0 5px;
+    background: linear-gradient(to top, #95b3f3 40%, transparent 40%);
+}
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 태블릿 */
+
+.about_tablet .about_wrap .profile-img{
+    width:300px;
+    height:300px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin:0 3vw;
+}
+
+.about_tablet .about_wrap .about-contents .profile-txt{
+    font-size: 1.2em;
+}
+
+/* 모바일 */
+
+.about_mobile .about_wrap .about-contents{
+    flex-direction: column;
+}
+
+.about_mobile .about_wrap .profile-img{
+    width:200px;
+    height:200px;
+    border-radius: 70%;
+    overflow: hidden;
+    margin:5vw 0 2vw 0;
+}
+
+.about_mobile .about_wrap .about-contents .profile-txt{
+    font-size:1.2em;
+ 
+    font-weight: 500;
+    margin: 0 3vw;
+}
+
+.about_mobile .about_wrap .about-contents .profile-txt ul li{
+    padding: 3vw;
+    margin:30px 0;
+   
+}
+
+.about_mobile .about_wrap .intro{
+    font-size:1em;
+    padding-bottom:4vw;
+
+    width:85%;
+    margin:0 auto;
+}
+
+.about_mobile .about_wrap .intro p {
+    padding:5px 0;
+    line-height: 1.5em;
+    word-break: keep-all;
+}
+
+.about .about_wrap .intro .bold{
+    /* color:#3b75f3; */
+    font-size: 1.1em;
+    margin: 0 .2vw;
+    background: linear-gradient(to top, #95b3f3 30%, transparent 40%);
+}
