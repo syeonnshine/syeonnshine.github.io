@@ -1,27 +1,30 @@
-import { motion } from "framer-motion";
+import { useMediaQuery } from 'react-responsive'
+import Main_bg from "../../../images/main_bg.jpg"
+import Main_bg_t from "../../../images/main_bg_m.jpg"
+import Main_bg_s from "../../../images/main_bg_s.jpg"
 
 function Main() {
+  const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 })
+    return isDesktop ? children : null
+  }
+  const Tablet = ({ children }) => {
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+    return isTablet ? children : null
+  }
+  const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 })
+    return isMobile ? children : null
+  }
 
       return (
-        <div className="main_pc">
+        <div className="main_wrap">
             <div className="main_bg">
-                {/* <img src={Main_bg}></img> */}
-              
-                {/* <motion.div
-                className="text-box"
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.5,
-                  ease: [0, 0.71, 0.2, 1.01]
-                }}>
-  
-                     <p className='text1'>Web Develop</p>
-                     <p className='by'>by</p>
-                     <p className='text2'>Park SiYeon</p>
-                     </motion.div> */}
-                
+               <Desktop><img src={Main_bg}></img></Desktop> 
+                <Tablet><img src={Main_bg_t}></img></Tablet>
+                <div className='main_mobile'>
+                 <Mobile><img src={Main_bg_s}></img></Mobile>
+                </div>
             </div>
         </div>
       );
