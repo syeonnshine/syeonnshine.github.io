@@ -66,8 +66,7 @@
     flex-direction: column;
     justify-content: space-around;
   }
-  .cards .card .skill-img img{
-    max-width:150px;
-    max-height:180px;
-    padding: 1vw 0;
+  .skills-wrap img{
+    max-width:80px;
+    max-height:80px;
   }

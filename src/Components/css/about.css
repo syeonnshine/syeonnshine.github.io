@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+@import "tailwindcss";
 .about{
     font-family: 'IBM Plex Sans KR', sans-serif;
     /* height:100vh; */
@@ -82,7 +83,7 @@
 
 .about .about_wrap .intro{
     text-align: center;
-    font-size:1.2em;
+    /*font-size:1.2em;*/
     padding-bottom:4vw;
 }
 
@@ -123,7 +124,7 @@
 }
 
 .about_tablet .about_wrap .about-contents .profile-txt{
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
 }
 
 /* 모바일 */
@@ -154,7 +155,7 @@
 }
 
 .about_mobile .about_wrap .intro{
-    font-size:1em;
+    /*font-size:1em;*/
     padding-bottom:4vw;
 
     width:85%;
@@ -163,7 +164,6 @@
 
 .about_mobile .about_wrap .intro p {
     padding:5px 0;
-    line-height: 1.5em;
     word-break: keep-all;
 }
 

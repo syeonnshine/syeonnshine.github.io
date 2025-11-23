@@ -53,12 +53,13 @@ header{
     height:100vh;
 
     display: flex;
-
+    overflow: hidden;
 }
 
 .main_wrap .main_bg img{
     width:100%;
     height:auto;
+    display: block;
 }
 /* 
 @media screen and (min-width: 0) and (max-width: 767px){
