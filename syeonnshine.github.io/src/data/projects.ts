@@ -27,4 +27,18 @@ export const projects: Project[] = [
       '퇴사 후 스스로 최신 AI 도구를 학습하고 실제 동작하는 결과물로 만들어낸 프로젝트',
     ],
   },
+  {
+    name: 'AI 무드보드 생성기',
+    period: '2026 ~',
+    summary: '키워드 하나로 색상 팔레트·폰트·감성 이미지를 자동 생성하는 AI 디자인 도구',
+    tags: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS v4', 'Claude API', 'Unsplash API', 'ColorThief'],
+    highlights: [
+      'Claude API로 키워드의 감성 온도를 분석해 5가지 색상 + 한국어 감성 설명 생성, 프롬프트 캐싱 적용으로 API 비용 절감',
+      'Google Fonts 기반 헤딩·본문 폰트 2~3가지 조합 자동 제안',
+      'Unsplash API로 이미지 30장 검색 → ColorThief로 픽셀 색상 추출 → 팔레트와 RGB 거리 계산해 가장 어울리는 6장 선별',
+    ],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/syeonnshine/ai-mood-board' },
+    ],
+  },
 ]
