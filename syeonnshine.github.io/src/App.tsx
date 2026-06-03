@@ -5,15 +5,22 @@
 import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      {/* 다음 섹션은 여기에 추가: <Projects />, <Skills />, <Contact /> */}
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+      </main>
+    </>
   )
 }
 

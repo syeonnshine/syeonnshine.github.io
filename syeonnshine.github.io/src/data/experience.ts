@@ -1,5 +1,7 @@
 // Experience 섹션 데이터
 // 회사 → 프로젝트 2단계 구조로 관리합니다.
+import vpsDemoMp4 from '../assets/vps_demo.mp4'
+import visaDemoMp4 from '../assets/visa_demo.mp4'
 
 export type Project = {
   name: string
@@ -8,6 +10,7 @@ export type Project = {
   stacks: string[]
   achievements: string[]
   isFeatured?: boolean  // true면 "대표 프로젝트" 배지 표시
+  demoUrl?: string      // 시연 GIF 경로
 }
 
 export type Experience = {
@@ -36,6 +39,7 @@ export const experiences: Experience[] = [
           'API 기반 SearchFilter 컴포넌트 설계로 다양한 검색 조건 연동 로직 재사용성 확보',
         ],
         isFeatured: true,
+        demoUrl: vpsDemoMp4,
       },
       {
         name: '방선신청 및 안전관리시스템',
@@ -46,12 +50,13 @@ export const experiences: Experience[] = [
           'Thymeleaf + Alpine.js로 Spring Boot 서버와 연동한 운영 화면 구현',
           '반응형 UI로 PC·모바일 환경 최적화',
         ],
+        demoUrl: visaDemoMp4,
       },
     ],
   },
   {
     company: '엑시아소프트',
-    period: '(기간 비공개)',
+    period: '2022.09 ~ 2023.10',
     stacks: ['Java', 'Spring Boot', 'Vue', 'JSP', 'MySQL'],
     bullets: [
       'ISMS(정보보호관리체계) 인증심사 기간 대응 지원',

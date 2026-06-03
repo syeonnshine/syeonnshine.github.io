@@ -46,6 +46,20 @@ function ProjectCard({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
+
+      {/* 시연 GIF — 있을 때만 표시 */}
+      {project.demoUrl && (
+        <div className="mt-5 pt-4 border-t border-border">
+          <p className="text-xs text-text-muted mb-2 tracking-widest uppercase">Demo</p>
+          <video
+            src={project.demoUrl}
+            controls
+            muted
+            playsInline
+            className="w-full rounded-md border border-border"
+          />
+        </div>
+      )}
     </div>
   )
 }
