@@ -1,5 +1,5 @@
 // Hero.tsx — 페이지 최상단 섹션
-import { heroStacks, heroContacts, type LinkIcon } from "../data/hero";
+import { heroContacts, type LinkIcon } from "../data/hero";
 import profileImg from "../assets/profile.jpg";
 
 const icons: Record<LinkIcon, (className: string) => React.ReactNode> = {
