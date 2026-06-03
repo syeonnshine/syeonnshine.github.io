@@ -28,7 +28,7 @@ jobs:
         working-directory: syeonnshine.github.io
 
       - name: Build
-        run: npm run build
+        run: npx vite build
         working-directory: syeonnshine.github.io
 
       - uses: actions/upload-pages-artifact@v3
